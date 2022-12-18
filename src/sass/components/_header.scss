@@ -58,7 +58,7 @@ display: flex;
 align-items: baseline;
   min-width: 152px;
   padding: 12px 36px;
-margin-left: 32px;
+
 
   background: var(--btn-bg);
   border-radius: 10px;
@@ -109,6 +109,10 @@ margin-left: 32px;
 
   background-color: transparent;
   color: var(--primary-text);
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 32px;
+  }
 }
 
 .menu-toggle__icon {
