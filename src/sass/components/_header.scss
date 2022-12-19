@@ -47,18 +47,17 @@
   &:hover,
   &:focus {
     color: var(--btn-bg);
-    // cursor: ;
+    cursor: url(../images/icons/cursor.svg), auto;
   }
 }
 
 // Button
 
-.button {
-display: flex;
-align-items: baseline;
+.header_button {
+  display: flex;
+  align-items: baseline;
   min-width: 152px;
   padding: 12px 36px;
-
 
   background: var(--btn-bg);
   border-radius: 10px;
@@ -77,16 +76,18 @@ align-items: baseline;
     color: var(--additional-bg);
   }
 
-  @media screen and (max-width: 767px) {
-      display: none;
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
   }
-
-    @media screen and (min-width: $desktop) {
-      margin-left: auto;
-    }
 }
 
-.button__icon {
+.header_button--geometry {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.header_button__icon {
   fill: currentColor;
   margin-left: 4px;
 }
@@ -188,7 +189,7 @@ align-items: baseline;
   }
 }
 
-.button--menu {
+.header_button--menu {
   margin: 0 auto;
   margin-top: auto;
 
