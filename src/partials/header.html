@@ -1,4 +1,4 @@
-<section class="header">
+<section class="header" id="header">
   <div class="container">
     <div class="header__nav">
       <a class="logo" href="#">
@@ -15,10 +15,10 @@
 
       <ul class="site-nav">
         <li class="site-nav__item">
-          <a href="/index" class="site-nav__link">Home</a>
+          <a href="#header" class="site-nav__link">Home</a>
         </li>
         <li class="site-nav__item">
-          <a href="#How it’s made?" class="site-nav__link">How it’s made?</a>
+          <a href="#how-it’s-made?" class="site-nav__link">How it’s made?</a>
         </li>
         <li class="site-nav__item">
           <a href="#products" class="site-nav__link">Our products</a>
@@ -34,8 +34,9 @@
         </svg>
       </button>
 
-      <button class="button" type="button">
-        Buy now <svg class="button__icon" width="6" height="9">
+      <button class="header_button header_button--geometry" type="button">
+        Buy now
+        <svg class="header_button__icon" width="6" height="9">
           <use href="./images/icons.svg#button_vector"></use>
         </svg>
       </button>
@@ -73,11 +74,18 @@
       <a href="#products" class="mobile-menu__link">Our products</a>
     </li>
     <li class="mobile-menu__item">
-      <a href="#contacts" class="mobile-menu__link">Contact</a>
+      <a href="./contacts" class="mobile-menu__link">Contact</a>
     </li>
   </ul>
 
-  <button class="button button--menu" type="button">
+  <button class="header_button header_button--menu" type="button">
     Buy now
+    <svg class="header_button__icon" width="6" height="9">
+      <use href="./images/icons.svg#button_vector"></use>
+    </svg>
   </button>
 </div>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"></script>
