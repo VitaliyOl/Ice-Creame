@@ -1,34 +1,26 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p, b {
-margin: 0;
-}
 
-b {
-    font-family: 'Montserrat', sans-serif;
- }
 
- input::placeholder, textarea::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(20 / 14);
-    color: #131313;
-}
+// b {
+//     font-family: 'Montserrat', sans-serif;
+//  }
 
-textarea {
-    min-width: 368px;
-    min-height: 84px;
-    padding: 11px;
+//  input::placeholder, textarea::placeholder {
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: calc(20 / 14);
+//     color: #131313;
+// }
 
-    background-color: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-    resize: none;
-}
+// textarea {
+//     min-width: 368px;
+//     min-height: 84px;
+//     padding: 11px;
+
+//     background-color: rgba(248, 210, 78, 0.1);
+//     border: 1px solid #84A178;
+//     border-radius: 10px;
+//     resize: none;
+// }
 
 
 
