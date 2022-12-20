@@ -1,10 +1,19 @@
 .advantages {
-    @extend %section;
+    padding-bottom: 32px;
     background-color: var(--primary-bg) ;
+
+    @media screen and (min-width: $tablet) {
+        padding-bottom: 60px;
+    }
+   
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 80px;
+    }
 }
 
 .advantages-list {
         @media screen and (min-width: 768px) {
+            
         display: flex;
         align-items: baseline;
     }
