@@ -87,10 +87,10 @@ height: 453px;
 
     
 
-    &:visited {
-        border-color: var(--btn-bg-disabled);
+    // &:visited {
+    //     border-color: var(--btn-bg-disabled);
         
-    }
+    // }
 
     @media screen and (min-width: $desktop) {
         font-size: 14px;
@@ -128,10 +128,10 @@ height: 453px;
         color: var(--secondary-bg);
     }
     
-    &:visited {
-        color: var(--btn-bg-disabled);
+    // &:visited {
+    //     color: var(--btn-bg-disabled);
 
-    }
+    // }
 
     @media screen and (min-width: $tablet) {
         top: 41%;
