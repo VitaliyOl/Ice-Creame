@@ -202,6 +202,8 @@ textarea {
    border: 2px solid #96AF8C;
    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
    border-radius: 15px;
+
+   color: var(--secondary-text);
 }
 
 .label__input:checked + .label__span {
@@ -321,8 +323,9 @@ textarea {
 
     .about__modal {
         position: absolute;
+        top: 1450;
         min-width: 568px;
-        min-height: 996px;
+        max-height: 996px;
         padding: 32px 40px;
     }
 
@@ -367,8 +370,9 @@ textarea {
         font-weight: 400;
         font-size: 12px;
         line-height: calc(15 / 12);
+        letter-spacing: 0em;
         text-align: center;
-        color: #131313;
+        color: var(--secondary-text);
      }
     
      .three {
@@ -397,11 +401,12 @@ textarea {
         font-weight: 500;
         font-size: 20px;
         line-height: calc(28 / 20);
-        color: #131313;
+        color: var(--secondary-text);
     }
 
     .ngredients__list {
         margin-bottom: 48px;
+      color: var(--secondary-text);
     }
 
     .ingredients__item {
@@ -486,7 +491,6 @@ textarea {
         MODAL 5 
     ============== */
 
-
     .franchise__form {
         display: flex;
     flex-direction: column;
@@ -494,6 +498,7 @@ textarea {
     min-width: 568px;
     min-height: 668px;
     padding: 32px 60px;
+    color: var(--secondary-text);
     }
 
     .franchise__subject {
