@@ -1,4 +1,5 @@
 .advantages {
+    @extend %section;
     background-color: var(--primary-bg) ;
 }
 
@@ -57,12 +58,6 @@
     width: 230px;
     margin-left: auto;
     margin-right: auto;
-
-            @media screen and (min-width: 768px) {
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                }
 }
 
 
@@ -95,12 +90,18 @@
 
 .cow-icon::before {
     background-image: url(../images/icons/cow.svg);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .weight-icon::before {
     background-image: url(../images/icons/weight.svg);
+        margin-left: auto;
+            margin-right: auto;
 }
 
 .ice-crema-icon::before {
     background-image: url(../images/icons/ice-crema.svg);
+        margin-left: auto;
+            margin-right: auto;
 }
