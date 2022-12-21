@@ -24,7 +24,7 @@
                     </label>
                 </div>
                 <div class="box__two">
-                    <img class="box__img" src="./images/modal/buy-now/ice-cream@1x.png" alt="ice cream">
+                    <img class="box__img" srcset="./images/modal/buy-now/ice-cream@1x.png 1x, ./images/modal/buy-now/ice-cream@2x.png 2x" src="./images/modal/buy-now/ice-cream@1x.png" alt="ice cream">
                 </div>
             </li>
             <li class="buy__item">
@@ -35,7 +35,7 @@
                     </label>
                 </div>
                 <div class="box__four">
-                    <img class="box__img" src="./images/modal/buy-now/ice-coffee@1x.png" alt="ice coffee">
+                    <img class="box__img" srcset="./images/modal/buy-now/ice-coffee@1x.png 1x, ./images/modal/buy-now/ice-coffee@2x.png 2x" src="./images/modal/buy-now/ice-coffee@1x.png" alt="ice coffee">
                 </div>
             </li>
             <li class="buy__item">
@@ -46,7 +46,7 @@
                     </label>
                 </div>
                 <div class="box__six">
-                    <img class="box__img" src="./images/modal/buy-now/milkshake@1x.png" alt="milkshake">
+                    <img class="box__img" srcset="./images/modal/buy-now/milkshake@1x.png 1x, ./images/modal/buy-now/milkshake@2x.png 2x" src="./images/modal/buy-now/milkshake@1x.png" alt="milkshake">
                 </div>
             </li>
         </ul>
@@ -66,13 +66,13 @@
             <textarea class="buy__textarea" name="comment" rows="6" minlength="40" placeholder="Comment"></textarea>
         </label>
 
-        <button class="buy__btn btn" type="submit" disabled>
+        <button class="buy__btn btn--modal" type="submit">
             <span>Submit</span>
         </button>
     </form>
 </div>
 
-<!--==============
+<!--============== 
     MODAL 2 
 ==============-->
 
@@ -160,7 +160,7 @@
             <textarea class="about__textarea" name="comment" minlength="40" rows="3" placeholder="Comment"></textarea>
         </label>
 
-        <button class="about__btn btn" type="submit">
+        <button class="about__btn btn--modal" type="submit">
             <span>Submit</span>
         </button>
     </form>
@@ -198,7 +198,7 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.057873270101!2d-73.95692268459621!3d40.67269377933625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b9e1735b38f%3A0xb5fe454b88e9c2c0!2zNzI2IFN0ZXJsaW5nIFBsLCBCcm9va2x5biwgTlkgMTEyMTYsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1671222358146!5m2!1suk!2sua"
         width="448" height="260" style="border: 0" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <a class="local__link" href="https://goo.gl/maps/mZwQENBwmgegPtJZ8" target="_blank"
+    <a class="local__link link--modal" href="https://goo.gl/maps/mZwQENBwmgegPtJZ8" target="_blank"
         rel="nofollow noopener noreferre">Open map</a>
 </div>
 
@@ -238,7 +238,7 @@
                 placeholder="Comment"></textarea>
         </label>
 
-        <button class="franchise__btn btn" type="submit">
+        <button class="franchise__btn btn--modal" type="submit">
             <span>Submit</span>
         </button>
     </form>

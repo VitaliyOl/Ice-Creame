@@ -1,5 +1,3 @@
-
-
 b {
     font-family: 'Montserrat', sans-serif;
  }
@@ -73,6 +71,9 @@ textarea {
     cursor: pointer;
  }
 
+
+ /* Общие стили  */
+
  .after {
     display: flex;
     font-family: 'Seymour One', sans-serif;    
@@ -80,35 +81,9 @@ textarea {
     font-size: 20px;
     line-height: calc(28 / 20);
     justify-content: center;
+    color: var(--secondary-text);
  }
 
- .link {
-    display: inline-flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 145px;
-    height: 42px;
-    padding: 12px 34px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: calc(17 / 14);
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    color: #131313;
-    background-color: #F8D24E;
-    border-radius: 10px;
- }
-
- .link:hover, .link:focus {
-    background-color: #0A8817;
- }
-
- .link:focus {
-    color: #ffffff;
- }
-
- 
  .input {
     min-width: 368px;
     min-height: 42px;
@@ -117,34 +92,30 @@ textarea {
     border: 1px solid #84A178;
     border-radius: 10px;
  }
-
- .form-input:not(:placeholder-shown):required:valid {
-    border-color: green;
-  }
   
-  .form-input:not(:placeholder-shown):required:invalid {
+  .input:not(:placeholder-shown):required:invalid {
     border-color: red;
   }
 
- .btn {
+ .btn--modal {
     width: 121px;
     height: 42px;
     padding: 12px 34px;
     font-weight: 600;
     font-size: 14px;
     line-height: calc(17 / 14);
-    color: #131313;
+    color: var(--secondary-text);
 
     background-color: #F8D24E;
     border-radius: 10px;
     border: none;
  }
 
- .btn:hover, .btn:focus {
+ .btn--modal:hover, .btn--modal:focus {
     background-color: #0A8817;
  }
 
- .btn:focus {
+ .btn--modal:focus {
     color: #ffffff;
  }
  
@@ -393,6 +364,7 @@ textarea {
         font-size: 12px;
         line-height: calc(28 / 12);
         text-align: center;
+        color: var(--secondary-text);
      }
 
     .ingredients__text {
@@ -486,13 +458,39 @@ textarea {
     .local__iframe {
         border-radius: 10px;
     }
+
+    .local__link {
+      display: inline-flex;
+      margin-left: auto;
+      margin-right: auto;
+      width: 145px;
+      height: 42px;
+      padding: 12px 32px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: calc(17 / 14);
+      justify-content: center;
+      text-align: center;
+      text-decoration: none;
+      color: #131313;
+      background-color: #F8D24E;
+      border-radius: 10px;
+   }
+  
+   .local__link:hover, .local__link:focus {
+      background-color: #0A8817;
+   }
+  
+   .local__link:focus {
+      color: #ffffff;
+   }
     
 /* ===============
         MODAL 5 
     ============== */
 
     .franchise__form {
-        display: flex;
+    display: flex;
     flex-direction: column;
     text-align: center;
     min-width: 568px;
@@ -511,7 +509,6 @@ textarea {
         max-width: 448px;
         margin-top: 24px;
         margin-bottom: 32px;
-        font-family: 'Montserrat';
         font-weight: 400;
         font-size: 16px;
         line-height: calc(22 / 16);
