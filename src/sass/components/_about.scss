@@ -1,13 +1,14 @@
 .about {
     @extend %section;
     background-color: var(--primary-bg);
+
+    @media screen and (max-width: 767px) {
+        padding-bottom: 50px;
+    }
 }
 
 .about-text {
     margin-bottom: 12px;
-    font-family: 'Montserrat';
-    font-style: normal;
-
     text-align: center;
     text-transform: uppercase;
     color: var(--secondary-bg);
@@ -35,7 +36,6 @@
     margin-bottom: 54px;
 
     font-family: 'Seymour One';
-    font-style: normal;
 
     @include fonts(30, 38, 400);
 
@@ -74,17 +74,17 @@
     @media screen and (min-width: $desktop) {
         content: '';
         display: block;
-        z-index: -1;
+        bottom: 39px;
         position: absolute;
+        z-index: -1;
+
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
-            #D9D9D9;
-        box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
-        bottom: 39px;
-    }
 
+        background: var(--about-gr);
+        box-shadow: var(--about-shadow);
+    }
 }
 
 
@@ -113,16 +113,8 @@
 @media screen and (max-width: 767px) {
     .about-list__text {
         text-align: center;
-
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
         font-size: 12px;
-        line-height: 21px;
-
-
-        text-align: center;
-        letter-spacing: 0.04em;
+        line-height: calc(21px / 12px);
     }
 }
 
@@ -133,8 +125,6 @@
 }
 
 .about-list__text {
-    font-family: 'Montserrat';
-    font-style: normal;
 
     @media screen and (min-width: $tablet) {
         margin-bottom: 8px;
@@ -170,8 +160,8 @@
 
         @include fonts(14, 17, 600);
 
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: $trns-bgc,
+            $trns-hover;
 
         &:hover {
             background-color: var(--btn-bg-hover);
@@ -200,8 +190,8 @@
 
         @include fonts(14, 17, 600);
 
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: $trns-bgc,
+            $trns-hover;
 
         &:hover {
             background-color: var(--btn-bg-hover);
