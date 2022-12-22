@@ -1,12 +1,21 @@
 .swiper {
-    background-image: var(--g-bg-mob);
+    background-image: linear-gradient(to bottom,
+            #84a178 15%,
+            #84a178 35%,
+            rgba(132, 161, 120, 0) 35%);
 
     @media screen and (min-width: 767px) {
-        background-image: var(--g-bg-tab);
+        background-image: linear-gradient(to bottom,
+                #84a178 15%,
+                #84a178 40%,
+                rgba(132, 161, 120, 0) 40%);
     }
 
     @media screen and (min-width: 1200px) {
-        background-image: var(--g-bg-des);
+        background-image: linear-gradient(to bottom,
+                #84a178 15%,
+                #84a178 25%,
+                rgba(132, 161, 120, 0) 25%);
     }
 }
 
@@ -23,13 +32,13 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 5%;
-    padding: 0 20px 80px 20px;
+    padding: 100px 20px;
 }
 
 @media screen and (min-width: 767px) {
     .galery-picture {
         padding: 0 32px;
-        padding-bottom: 100px;
+            padding-bottom: 100px;
         // margin-top: 60px;
         // margin-bottom: 100px;
     }

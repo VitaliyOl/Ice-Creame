@@ -1,13 +1,29 @@
+
 .contacts {
-  background-image: var(--c-bg-mob);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(132, 161, 120, 0) 24%,
+    #84a178 24%,
+    #84a178 70%
+  );
 
   @media screen and (min-width: $tablet) {
-    background-image: var(--c-bg-tab);
+    background-image: linear-gradient(
+      to bottom,
+      rgba(132, 161, 120, 0) 45%,
+      #84a178 45%,
+      #84a178 70%
+    );
 
     @media screen and (min-width: $desktop) {
-      background-image: var(--c-bg-des);
+      background-image: linear-gradient(
+        to bottom,
+        rgba(132, 161, 120, 0) 16%,
+        #84a178 16%,
+        #84a178 70%
+      );
     }
-
+        
   }
 
   &__list {
@@ -25,7 +41,6 @@
       gap: 32px;
     }
   }
-
   &__item {
     display: block;
     width: 280px;
@@ -102,17 +117,17 @@
     }
   }
 
-  &__text--none {
-    @media screen and (max-width: 767px) {
-      display: none;
+    &__text--none {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
     }
-  }
-
-  &__text--hidden {
-    @media screen and (min-width: $tablet) {
-      display: none;
+  
+    &__text--hidden {
+      @media screen and (min-width: $tablet) {
+        display: none;
+      }
     }
-  }
 }
 
 
@@ -125,7 +140,6 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
-
   &__text {
     margin-bottom: 8px;
 
@@ -139,6 +153,8 @@
 
     @media screen and (min-width: $tablet) {
       margin-bottom: 12px;
+
+      font-size: 14px;
       line-height: calc(26 / 14);
     }
 
@@ -154,17 +170,17 @@
     color: var(--third-prod-bg);
   }
 
-  &__text--none {
-    @media screen and (max-width: 767px) {
-      display: none;
+    &__text--none {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
     }
-  }
-
-  &__text--hidden {
-    @media screen and (min-width: $tablet) {
-      display: none;
+  
+    &__text--hidden {
+      @media screen and (min-width: $tablet) {
+        display: none;
+      }
     }
-  }
 }
 
 
@@ -177,7 +193,6 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
-
   &__item:first-child {
     margin-bottom: 8px;
 
@@ -185,7 +200,6 @@
       margin-bottom: 12px;
     }
   }
-
   &__text {
     font-family: var(--primary-font);
     font-weight: 500;
@@ -196,6 +210,7 @@
     color: var(--secondary-text);
 
     @media screen and (min-width: $tablet) {
+      font-size: 14px;
       line-height: calc(26 / 14);
     }
 
@@ -204,7 +219,6 @@
       line-height: calc(30 / 16);
     }
   }
-
   &__text--color {
     color: var(--btn-bg-disabled);
   }
@@ -238,6 +252,7 @@
   }
 
   @media screen and (min-width: $tablet) {
+    font-size: 14px;
     line-height: calc(21 / 14);
   }
 
@@ -279,13 +294,13 @@
 
   font-family: var(--primary-font);
   font-weight: 600;
+  font-size: 14px;
   line-height: calc(18 / 14);
   letter-spacing: 0em;
 
   color: var(--secondary-text);
   background-color: var(--btn-bg);
   cursor: pointer;
-  transition: $trns-bgc, $trns-brd;
 
   @media screen and (max-width: 767px) {
     margin-left: auto;
@@ -303,7 +318,6 @@
     background-color: var(--btn-bg-disabled);
     border: 2px solid var(--btn-bg-disabled);
   }
-
   &--color {
     background-color: transparent;
     margin-bottom: 0;

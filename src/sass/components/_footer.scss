@@ -22,7 +22,6 @@
       margin-bottom: 16px;
     }
   }
-
   &__text {
     display: block;
     width: 232px;
@@ -49,7 +48,6 @@
       line-height: calc(37 / 30);
     }
   }
-
   &__text--size {
     font-size: 34px;
     line-height: calc(41 / 34);
@@ -96,11 +94,8 @@
   &__item:first-child {
     margin-left: auto;
   }
-
   &__link {
     color: var(--primary-bg);
-
-    transition: $trns-hover;
   }
 
   &__link:hover,
@@ -145,9 +140,10 @@
   text-align: center;
 
   font-weight: 700;
+  font-size: 14px;
   line-height: calc(21 / 14);
 
-  color: var(--additional-text);
+  color: #7a7a7a;
 
   @media screen and (min-width: $tablet) {
     display: flex;
