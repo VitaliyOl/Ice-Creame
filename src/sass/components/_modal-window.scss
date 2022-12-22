@@ -72,12 +72,13 @@ textarea {
    position: absolute;
    top: 12px;
    right: 12px;
+   padding: 0;
    width: 20px;
    height: 20px;
    fill: #131313;
+   background-color: #ffffff;
    cursor: pointer;
-   border-radius: 50%;
-   border: 1px solid rgba(0, 0, 0, 0);
+   border: none;
 
     @media screen  and (min-width: $tablet) {
         width: 24px;
