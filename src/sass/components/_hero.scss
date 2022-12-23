@@ -17,7 +17,29 @@
 
 .hero_container {
     position: relative;
+    z-index: 3;
 }
+
+.hero_confetti {
+    position: absolute;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    height: 453px;
+    pointer-events: none;
+
+
+    @media screen and (min-width: $tablet) {
+
+        height: 374px;
+    }
+
+    @media screen and (min-width: $desktop) {
+
+        height: 591px;
+    }
+}
+
 
 // Left side
 .hero_title {
