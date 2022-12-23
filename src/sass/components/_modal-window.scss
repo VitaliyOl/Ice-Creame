@@ -170,40 +170,38 @@ textarea {
    ============== */
 
 .buy__modal {
-   position: absolute;
-   top: 500px;
    max-width: 280px;
    min-height: 991px;
    padding: 28px;
 
-   @media screen  and (min-width: $tablet) {
-     max-width: 568px;
-     min-height: 644px;
-     padding: 32px 54px;
-  }
+   @media screen and (min-width: $tablet) {
+      max-width: 568px;
+      min-height: 644px;
+      padding: 32px 54px;
+   }
 }
 
 
 .box__list {
-  @media screen  and (max-width: 767px) {
-     margin-top: 72px;
-     margin-left: 46px;
-     margin-bottom: 31px;
-  }
+   @media screen and (max-width: 767px) {
+      margin-top: 72px;
+      margin-left: 46px;
+      margin-bottom: 31px;
+   }
 
-   @media screen  and (min-width: $tablet) {
-     display: flex;
-     justify-content: center;
-     gap: 32px;
-     margin-top: 100px;
-     margin-bottom: 40px;
-  }
+   @media screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-top: 100px;
+      margin-bottom: 40px;
+   }
 }
 
 .box__item {
-  @media screen  and (max-width: 767px) {
-     margin-top: 83px;
-  }
+   @media screen and (max-width: 767px) {
+      margin-top: 83px;
+   }
 }
 
 .box__one {
@@ -228,24 +226,24 @@ textarea {
 }
 
 .label__span {
-  display: flex;
-  justify-content: center;
-  width: 132px;
-  height: 135px;
-  padding-top: 95px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.04em;
-  border: 2px solid #96AF8C;
-  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
-  border-radius: 15px;
+   display: flex;
+   justify-content: center;
+   width: 132px;
+   height: 135px;
+   padding-top: 95px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: calc(20 / 16);
+   letter-spacing: 0.04em;
+   border: 2px solid #96AF8C;
+   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+   border-radius: 15px;
 
-  color: var(--secondary-text);
+   color: var(--secondary-text);
 }
 
-.label__input:checked + .label__span {
-  background-color: #96AF8C;
+.label__input:checked+.label__span {
+   background-color: #96AF8C;
 }
 
 .box__item:focus-within .label__span {
@@ -253,27 +251,27 @@ textarea {
 }
 
 .box__two {
-  position: relative;
-  top: -56px;
-  width: 132px;
-  height: 132px;
-  border-radius: 50%;
-  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+   position: relative;
+   top: -56px;
+   width: 132px;
+   height: 132px;
+   border-radius: 50%;
+   background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
 
 .box__img {
-  position: relative;
-  bottom: 7px;
+   position: relative;
+   bottom: 7px;
 }
 
-.box__three { 
-  position: absolute;
-  width: 132px;
-  height: 135px;
-  border: 2px solid #EFD478;
-  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
-  border-radius: 15px;
+.box__three {
+   position: absolute;
+   width: 132px;
+   height: 135px;
+   border: 2px solid #EFD478;
+   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+   border-radius: 15px;
 }
 
 .box__three__label {
@@ -284,11 +282,11 @@ textarea {
 }
 
 .label__span--three {
-  border: 2px solid #EFD478;
+   border: 2px solid #EFD478;
 }
 
-.label__input:checked + .label__span--three {
-  background-color: #EFD478;
+.label__input:checked+.label__span--three {
+   background-color: #EFD478;
 }
 
 .box__item:focus-within .label__span--three {
@@ -296,22 +294,22 @@ textarea {
 }
 
 .box__four {
-  position: relative;
-  top: -56px;
-  width: 132px;
-  height: 132px;
-  border-radius: 50%;
-  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+   position: relative;
+   top: -56px;
+   width: 132px;
+   height: 132px;
+   border-radius: 50%;
+   background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+   box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
 
 .box__five {
-  position: absolute;
-  width: 132px;
-  height: 135px;
-  border: 2px solid #D6936D;
-  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
-  border-radius: 15px;
+   position: absolute;
+   width: 132px;
+   height: 135px;
+   border: 2px solid #D6936D;
+   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+   border-radius: 15px;
 }
 
 .box__five__label {
@@ -325,9 +323,9 @@ textarea {
    border: 2px solid #D6936D;
 }
 
-.label__input:checked + .label__span--five {
+.label__input:checked+.label__span--five {
    background-color: #D6936D;
-} 
+}
 
 .box__item:focus-within .label__span--five {
    border: 2px solid #000000;
@@ -350,28 +348,28 @@ textarea {
    min-width: 224px;
    min-height: 221px;
 
-   @media screen  and (min-width: $tablet) {
-     min-width: 368px;
-     min-height: 274px;
-  }
+   @media screen and (min-width: $tablet) {
+      min-width: 368px;
+      min-height: 274px;
+   }
 }
 
 .buy__input {
    margin-bottom: 12px;
 
-   @media screen  and (min-width: $tablet) {
-     margin-bottom: 16px;
-  }
+   @media screen and (min-width: $tablet) {
+      margin-bottom: 16px;
+   }
 }
 
 .buy__textarea {
    width: 224px;
    height: 65px;
 
-   @media screen  and (min-width: $tablet) {
-     width: 368px;
-   height: 84px;
-  }
+   @media screen and (min-width: $tablet) {
+      width: 368px;
+      height: 84px;
+   }
 }
 
 .buy__btn {
@@ -379,9 +377,9 @@ textarea {
    margin-left: auto;
    margin-right: auto;
 
-   @media screen  and (min-width: $tablet) {
-     margin-top: 32px;
-  }
+   @media screen and (min-width: $tablet) {
+      margin-top: 32px;
+   }
 }
 
 
