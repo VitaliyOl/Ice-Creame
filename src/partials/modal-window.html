@@ -21,15 +21,10 @@
             </label>
           </div>
           <div class="box__two">
-            <img
-              class="box__img"
-              srcset="
+            <img class="box__img" srcset="
                 ./images/modal/buy-now/ice-cream@1x.png 1x,
                 ./images/modal/buy-now/ice-cream@2x.png 2x
-              "
-              src="./images/modal/buy-now/ice-cream@1x.png"
-              alt="ice cream"
-            />
+              " src="./images/modal/buy-now/ice-cream@1x.png" alt="ice cream" />
           </div>
         </li>
         <li class="box__item">
@@ -40,15 +35,10 @@
             </label>
           </div>
           <div class="box__four">
-            <img
-              class="box__img"
-              srcset="
+            <img class="box__img" srcset="
                 ./images/modal/buy-now/ice-coffee@1x.png 1x,
                 ./images/modal/buy-now/ice-coffee@2x.png 2x
-              "
-              src="./images/modal/buy-now/ice-coffee@1x.png"
-              alt="ice coffee"
-            />
+              " src="./images/modal/buy-now/ice-coffee@1x.png" alt="ice coffee" />
           </div>
         </li>
         <li class="box__item">
@@ -59,50 +49,26 @@
             </label>
           </div>
           <div class="box__six">
-            <img
-              class="box__img"
-              srcset="
+            <img class="box__img" srcset="
                 ./images/modal/buy-now/milkshake@1x.png 1x,
                 ./images/modal/buy-now/milkshake@2x.png 2x
-              "
-              src="./images/modal/buy-now/milkshake@1x.png"
-              alt="milkshake"
-            />
+              " src="./images/modal/buy-now/milkshake@1x.png" alt="milkshake" />
           </div>
         </li>
       </ul>
     </div>
     <form class="buy__form">
       <label class="buy__label form-input">
-        <input
-          class="buy__input input"
-          placeholder="Name"
-          type="text"
-          name="name"
-          required
-          pattern="[A-Za-z0-9]{3,}"
-        />
+        <input class="buy__input input" placeholder="Name" type="text" name="name" required pattern="[A-Za-z0-9]{3,}" />
       </label>
 
       <label class="buy__label form-input">
-        <input
-          class="buy__input input"
-          placeholder="Phone"
-          type="tel"
-          name="tel"
-          required
-          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-        />
+        <input class="buy__input input" placeholder="Phone" type="tel" name="tel" minlength="13" maxlength="13"
+          required />
       </label>
 
       <label class="buy__label">
-        <textarea
-          class="buy__textarea"
-          name="comment"
-          rows="6"
-          minlength="40"
-          placeholder="Comment"
-        ></textarea>
+        <textarea class="buy__textarea" name="comment" rows="6" minlength="40" placeholder="Comment"></textarea>
       </label>
 
       <button class="buy__btn btn--modal" type="submit">
@@ -125,11 +91,7 @@
   <div class="about__modal modal" data-modal="2">
     <b class="about__subject after">Chololate icecream</b>
     <div class="about__box">
-      <img
-        class="about__img"
-        src="./images/modal/choco-ice/choco-ice@1x.png"
-        alt="Chololate icecream"
-      />
+      <img class="about__img" src="./images/modal/choco-ice/choco-ice@1x.png" alt="Chololate icecream" />
     </div>
     <div class="about__group">
       <ul class="group__list">
@@ -194,35 +156,17 @@
 
     <form class="about__form">
       <label class="about__label">
-        <input
-          class="about__input input"
-          placeholder="Name"
-          type="text"
-          name="name"
-          required
-          pattern="[A-Za-z0-9]{3,}"
-        />
+        <input class="about__input input" placeholder="Name" type="text" name="name" required
+          pattern="[A-Za-z0-9]{3,}" />
       </label>
 
       <label class="about__label">
-        <input
-          class="about__input input"
-          placeholder="Phone"
-          type="tel"
-          name="tel"
-          required
-          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-        />
+        <input class="about__input input" placeholder="Phone" type="tel" name="tel" required minlength="13"
+          maxlength="13" />
       </label>
 
       <label class="about__label">
-        <textarea
-          class="about__textarea"
-          name="comment"
-          minlength="40"
-          rows="3"
-          placeholder="Comment"
-        ></textarea>
+        <textarea class="about__textarea" name="comment" minlength="40" rows="3" placeholder="Comment"></textarea>
       </label>
 
       <button class="about__btn btn--modal" type="submit">
@@ -244,16 +188,10 @@
 <div class="container">
   <div class="read__modal modal" data-modal="3">
     <b class="read__subject after">How it’s made&#63;</b>
-    <iframe
-      class="read__iframe"
-      width="448"
-      height="205"
-      src="https://www.youtube.com/embed/7gJIyHnD710?start=1"
-      title="YouTube video player"
-      frameborder="0"
+    <iframe class="read__iframe" width="448" height="205" src="https://www.youtube.com/embed/7gJIyHnD710?start=1"
+      title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+      allowfullscreen></iframe>
     <p class="read__text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
@@ -274,23 +212,12 @@
 <div class="container">
   <div class="local__modal modal" data-modal="4">
     <b class="local__subject after">Our Locations</b>
-    <iframe
-      class="local__iframe"
+    <iframe class="local__iframe"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.057873270101!2d-73.95692268459621!3d40.67269377933625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b9e1735b38f%3A0xb5fe454b88e9c2c0!2zNzI2IFN0ZXJsaW5nIFBsLCBCcm9va2x5biwgTlkgMTEyMTYsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1671222358146!5m2!1suk!2sua"
-      width="448"
-      height="260"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
-    <a
-      class="local__link link--modal"
-      href="https://goo.gl/maps/mZwQENBwmgegPtJZ8"
-      target="_blank"
-      rel="nofollow noopener noreferre"
-      >Open map</a
-    >
+      width="448" height="260" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <a class="local__link link--modal" href="https://goo.gl/maps/mZwQENBwmgegPtJZ8" target="_blank"
+      rel="nofollow noopener noreferre">Open map</a>
     <button class="modal__cross js-modal-close" type="button">
       <svg class="" width="24" height="24">
         <use href="../src/images/icons.svg#modal-close"></use>
@@ -306,9 +233,7 @@
 <div class="container">
   <div class="franchise__modal modal" data-modal="5">
     <form class="franchise__form">
-      <b class="franchise__subject after"
-        >Thank you for your interest in owning an Ice Cream shop</b
-      >
+      <b class="franchise__subject after">Thank you for your interest in owning an Ice Cream shop</b>
       <p class="franchise__text">
         Due to the overwhelming volume of franchise requests we are not
         accepting new franchisee applications at this time. Once the application
@@ -317,45 +242,21 @@
         additional information. We appreciate your patience.
       </p>
       <label class="franchise__label">
-        <input
-          class="franchise__input input"
-          placeholder="Name"
-          type="text"
-          name="name"
-          required
-          pattern="[A-Za-z0-9]{3,}"
-        />
+        <input class="franchise__input input" placeholder="Name" type="text" name="name" required
+          pattern="[A-Za-z0-9]{3,}" />
       </label>
 
       <label class="franchise__label">
-        <input
-          class="franchise__input input"
-          placeholder="Phone"
-          type="tel"
-          name="tel"
-          required
-          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-        />
+        <input class="franchise__input input" placeholder="Phone" type="tel" name="tel" required minlength="13"
+          maxlength="13" />
       </label>
 
       <label class="franchise__label">
-        <input
-          class="franchise__input input"
-          placeholder="Email"
-          type="email"
-          name="email"
-          required
-        />
+        <input class="franchise__input input" placeholder="Email" type="email" name="email" required />
       </label>
 
       <label class="franchise__label">
-        <textarea
-          class="franchise__textarea"
-          name="comment"
-          minlength="40"
-          rows="3"
-          placeholder="Comment"
-        ></textarea>
+        <textarea class="franchise__textarea" name="comment" minlength="40" rows="3" placeholder="Comment"></textarea>
       </label>
 
       <button class="franchise__btn btn--modal" type="submit">
