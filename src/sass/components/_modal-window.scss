@@ -60,12 +60,14 @@ textarea {
    background-color: #FCFCFC;
    border: 2px solid #F8D24E;
    border-radius: 10px;
+   overflow-y: scroll;
 }
 
 .modal.active,
 .overlay.active{
    opacity: 1;
    visibility: visible;
+ 
 }
 
 .modal__cross {
@@ -170,9 +172,12 @@ textarea {
    ============== */
 
 .buy__modal {
-   max-width: 280px;
+   position: absolute;
+   min-width: 280px;
    min-height: 991px;
    padding: 28px;
+   top: 600px;
+   
 
    @media screen and (min-width: $tablet) {
       max-width: 568px;
@@ -631,7 +636,7 @@ textarea {
 
    .read__iframe {
        border-radius: 10px;
-
+       border-width: 0;
        @media screen  and (max-width: 767px) {
          width: 224px;
          height: 199px;
